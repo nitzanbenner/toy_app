@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  resources :computers
   resources :microposts
   resources :users
   root 'users#index'
-  get '/microposts', to: 'microposts#index'
-  get '/test/:id', to: 'microposts#edit'
+  get '/computers/', to: 'computers#index'
 end

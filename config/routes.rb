@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resources :users
   root 'users#index'
   get '/microposts', to: 'microposts#index'
+  get '/test/:id', to: 'microposts#edit'
 end
